@@ -12,7 +12,7 @@ from flask_cors import CORS
 app = Flask(__name__)
 CORS(app)  # Allow access from any phone
 
-@app.route('/predict', methods=['POST'])
+@app.route('/predict_price', methods=['POST'])
 def predict_price():
     try:
         data = request.json
